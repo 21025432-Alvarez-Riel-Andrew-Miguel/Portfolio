@@ -1,0 +1,62 @@
+#corner{
+    position:relative;
+    width:275px;
+    height:275px;
+}
+
+#bg{
+    position: absolute;
+    right: 0;
+    min-width: 100%;
+    height:auto;
+    z-index: -5;
+}
+
+#centerGem{
+    display:grid;
+    place-content: center;
+    align-content: center;
+    width:23.5%;
+    height:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#portButton{
+    display:grid;
+    place-content: center;
+    align-content: center;
+    width:23.5%;
+    height:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.me{
+    text-align: center;
+    height:540px;
+    opacity: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.me.show{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.flex-container > section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.flex-container > div {
+    font-size: 30px;
+    padding: 30px;
+}
