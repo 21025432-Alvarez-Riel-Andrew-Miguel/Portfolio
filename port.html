@@ -64,15 +64,15 @@
   <p style="color:white; text-align: center;">Poster Design</p>
   <section>
       <article>
-          <div class="w3-hover-opacity" onclick="onClick(this)" style="cursor:pointer"><img src="images/barnight (2).png" width="300px"></div>
+        <div class="img"><img src="images/barnight (2).png" width="300px"></div>
           <p style="color:white; text-align: center;">Pepsi Poster</p>
       </article>
       <article>
-          <div class="w3-hover-opacity" onclick="onClick(this)"><img src="images/barnight (2).png" width="300px"></div>
+        <div class="img"><img src="images/barnight (2).png" width="300px"></div>
           <p style="color:white; text-align: center;">Castle of Ice</p>
       </article>
       <article>
-          <div class="w3-hover-opacity" onclick="onClick(this)"><img src="images/barnight (2).png" width="300px"></div>
+        <div class="img"><img src="images/barnight (2).png" width="300px"></div>
           <p style="color:white; text-align: center;">Flook</p>
       </article>
   </section>
@@ -85,16 +85,16 @@
   <p style="color:white; text-align: center;">UI/UX Design</p>   
   <section>
       <article>
-          <div class="w3-hover-opacity" onclick="onClick(this)"><img src="images/barnight (2).png" width="300px"></div>
-          <p style="color:white; text-align: center;">China</p>
+          <div class="img"><img src="images/Touch.png" width="300px"></div>
+          <p style="color:white; text-align: center;">Touch App</p>
       </article>
       <article>
-          <div class="w3-hover-opacity" onclick="onClick(this)"><img src="images/barnight (2).png" width="300px"></div>
-          <p style="color:white; text-align: center;">Indonesia</p>
+        <div class="img"><img src="images/MobilePort.png" width="300px"></div>
+          <p style="color:white; text-align: center;">Portfolio App</p>
       </article>
       <article>
-          <div class="w3-hover-opacity" onclick="onClick(this)"><img src="images/barnight (2).png" width="300px"></div>
-          <p style="color:white; text-align: center;">Vietnam</p>
+        <div class="img"><img src="images/SK4T3Z.png" width="300px"></div>
+          <p style="color:white; text-align: center;">SK4T3z</p>
       </article>
   </section>
   
@@ -107,26 +107,19 @@
   <p style="color:white; text-align: center;">Digital Art</p>
   <section>
       <article>
-          <div class="w3-hover-opacity" onclick="onClick(this)"><img src="images/barnight (2).png" width="300px"></div>
+        <div class="img"><img src="images/barnight (2).png" width="300px"></div>
           <p style="color:white; text-align: center;">China</p>
       </article>
       <article>
-          <div class="w3-hover-opacity" onclick="onClick(this)"><img src="images/barnight (2).png" width="300px"></div>
+        <div class="img"><img src="images/barnight (2).png" width="300px"></div>
           <p style="color:white; text-align: center;">Indonesia</p>
       </article>
       <article>
-          <div class="w3-hover-opacity" onclick="onClick(this)"><img src="images/barnight (2).png" width="300px"></div>
+        <div class="img"><img src="images/barnight (2).png" width="300px"></div>
           <p style="color:white; text-align: center;">Vietnam</p>
       </article>
   </section>
   
-
-  <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom">
-      <img id="img01" style="width:100%">
-    </div>
-  </div>
 
 </div>
 <br>
@@ -230,4 +223,12 @@
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
+
+<script>
+  function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+</script>
+
 </body>

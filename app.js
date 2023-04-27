@@ -29,8 +29,3 @@ const observer = new IntersectionObserver(entries => {
 
 me.forEach((el) => observer.observe(el))
 aboutMe.forEach((el) => observer.observe(el))
-
-function onClick(element) {
-    document.getElementById("img01").src = element.src;
-    document.getElementById("modal01").style.display = "block";
-  }
