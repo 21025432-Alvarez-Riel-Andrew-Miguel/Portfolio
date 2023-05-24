@@ -92,3 +92,10 @@ a{
     font-size: 30px;
     padding: 30px;
 }
+
+.bi{
+    size: 350px;
+    display:grid;
+    place-content: center;
+    align-content: center;
+}
