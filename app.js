@@ -14,18 +14,18 @@ var pointer = document.getElementById("centerGem");
 
 
 const me = document.querySelectorAll(".me")
-const aboutMe = document.querySelectorAll(".aboutMe")
+const bio = document.querySelectorAll(".bio")
+const pText = document.querySelectorAll(".pText")
 
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         console.log(entry)
         if(entry.isIntersecting){
             entry.target.classList.add('show');
-        } else {
-            entry.target.classList.remove('show');
         }
     })
 })
 
 me.forEach((el) => observer.observe(el))
-aboutMe.forEach((el) => observer.observe(el))
+bio.forEach((el) => observer.observe(el))
+pText.forEach((el) => observer.observe(el))

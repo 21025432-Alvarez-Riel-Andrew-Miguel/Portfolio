@@ -34,6 +34,10 @@
     margin-right: auto;
 }
 
+a{
+    text-decoration: none;
+}
+
 .me{
     text-align: center;
     height:540px;
@@ -49,6 +53,34 @@
     transform: translateX(0);
     opacity: 1;
 }
+
+.bio{
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 2s;
+    transition-delay: 750ms;
+}
+
+.bio.show{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.pText{
+    transform: translateY(-100%);
+    transform: scale(0);
+    opacity: 0;
+    transition: all 2s;
+    transition-delay: 250ms;
+}
+
+.pText.show{
+    transform: translateY(0);
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+
 
 .flex-container > section{
     display: flex;
