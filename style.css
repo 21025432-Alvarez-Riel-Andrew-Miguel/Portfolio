@@ -92,3 +92,33 @@ a{
     font-size: 30px;
     padding: 30px;
 }
+
+@font-face{
+    font-family: 'Rockwell';
+    src:url(fonts/ROCK.TTF) format('truetype');
+}
+
+@font-face{
+    font-family: 'Runic MT Condensed';
+    src:url(fonts/RunicMTCondensed.ttf) format('truetype');
+}
+
+p{
+    font-family: 'Rockwell', sans-serif;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Runic MT Condensed', sans-serif;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Runic MT Condensed', sans-serif;
+    text-align: center;
+}
+
+h3{
+    font-family: 'Runic MT Condensed', sans-serif;
+    text-align: center;
+}
